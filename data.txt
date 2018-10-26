@@ -1,0 +1,30 @@
+Clientes
+INSERT INTO `max`.`clientes`(`rut_cliente`,`direccion`,`nombre`,`telefono`) VALUES ('152368129','Morandé 239','Harttin Arce','946321859');
+INSERT INTO `max`.`clientes`(`rut_cliente`,`direccion`,`nombre`,`telefono`) VALUES ('157103562','Huérfanos 1102','Danilo Urbina','912874125');
+INSERT INTO `max`.`clientes`(`rut_cliente`,`direccion`,`nombre`,`telefono`) VALUES ('158810239','Huérfanos 1134','Patricia Guzmán','862348102');
+INSERT INTO `max`.`clientes`(`rut_cliente`,`direccion`,`nombre`,`telefono`) VALUES ('167096433','Holanda 100','Daniel Araya','954123956');
+INSERT INTO `max`.`clientes`(`rut_cliente`,`direccion`,`nombre`,`telefono`) VALUES ('172215017','Avenida Apoquindo 3885','Maximiliano Ruiz','955566212');
+
+Empleados
+INSERT INTO `max`.`empleados`(`usuario`,`clave`) VALUES ('1','1234');
+INSERT INTO `max`.`empleados`(`usuario`,`clave`) VALUES ('2','1234');
+INSERT INTO `max`.`empleados`(`usuario`,`clave`) VALUES ('3','1234');
+
+Pizzas
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('1','italiana.png','5000','Italiana');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('2','hawaiiana.png','6000','Hawaiiana');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('3','cuatroestaciones.png','7000','Cuatro Estaciones');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('4','espanola.png','5500','Española');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('5','espanolisima.png','6000','Españolísima');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('6','margarita.png','4500','Margarita');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('7','carne.png','6500','Carne');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('8','suprema.png','8000','Suprema');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('9','tejana.png','6500','Tejana BBQ');
+INSERT INTO `max`.`pizzas`(`id_pizza`,`imagen`,`precio`,`titulo`) VALUES ('10','vegana.png','6000','Vegana');
+
+Ordenes
+INSERT INTO `max`.`ordenes` (`id_orden`, `cantidad`, `fecha`, `idpizza`, `idcliente`, `idusuario`) VALUES ('1', '2', "2018-10-23", '1', '157103562', '1');
+INSERT INTO `max`.`ordenes` (`id_orden`, `cantidad`, `fecha`, `idpizza`, `idcliente`, `idusuario`) VALUES ('2', '1', "2018-10-22", '4', '152368129', '2');
+INSERT INTO `max`.`ordenes` (`id_orden`, `cantidad`, `fecha`, `idpizza`, `idcliente`, `idusuario`) VALUES ('3', '1', "2018-10-21", '3', '158810239', '1');
+INSERT INTO `max`.`ordenes` (`id_orden`, `cantidad`, `fecha`, `idpizza`, `idcliente`, `idusuario`) VALUES ('4', '5', "2018-10-22", '10', '172215017', '3');
+INSERT INTO `max`.`ordenes` (`id_orden`, `cantidad`, `fecha`, `idpizza`, `idcliente`, `idusuario`) VALUES ('5', '1', "2018-10-23", '2', '167096433', '2');
